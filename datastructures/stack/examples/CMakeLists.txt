@@ -1,0 +1,19 @@
+# specify the C standard
+set(CMAKE_C_STANDARD 11)
+
+# add the example source files
+set(STACK_EXAMPLES 
+    # please add file here
+)
+
+foreach(STACK_EXAMPLE ${STACK_EXAMPLES})
+    # used to manipulate the file path, dir name, file name, file extension
+    # "NAME_WE" means extract the filename without extension
+    get_filename_component(FILE_NAME_WO_EXT ${STACK_EXAMPLE} NAME_WE)
+
+    # generate executable for each source files
+    add_executable(${FILE_NAME_WO_EXT} ${STACK_EXAMPLE})
+
+    # link the stack_lib to each example executable
+    target_link_libraries(${FILE_NAME_WO_EXT} PRIVATE stack_lib)
+endforeach()
