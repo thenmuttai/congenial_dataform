@@ -29,4 +29,4 @@ target_link_libraries(test_stack PRIVATE stack_lib)
 
 # add the examples directory
 # this will search of CMakeLists file under examples dir and execute it
-# add_subdirectory(examples)
+add_subdirectory(examples)
