@@ -3,7 +3,8 @@ set(CMAKE_C_STANDARD 11)
 
 # add the example source files
 set(STACK_EXAMPLES
-        is_the_equation_valid.c
+        is_the_equation_valid.c                       # problem 01
+        parking_garage.c                              # problem 02
 )
 
 foreach(STACK_EXAMPLE ${STACK_EXAMPLES})
