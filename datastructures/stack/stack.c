@@ -87,6 +87,20 @@ bool stack_push(stack *s, void *val, int vtype) {
 
 
 
+bool stack_push_selement(stack *s, stack_element *se) {
+  // check for Overflow Condition
+  if (is_stack_full(s)) {
+    perror("stack_push_selement() | Overflow");
+    return false;
+  }
+
+  s->top++;
+  s->items[s->top] = se;
+  return true;
+}
+
+
+
 stack_element* stack_pop(stack *s) {
   // check for Underflow condition
   if (is_stack_empty(s)) {

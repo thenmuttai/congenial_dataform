@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 11)
 set(STACK_EXAMPLES
         is_the_equation_valid.c                       # problem 01
         parking_garage.c                              # problem 02
+        implement_static_array_with_2_stack.c         # problem 03
 )
 
 foreach(STACK_EXAMPLE ${STACK_EXAMPLES})

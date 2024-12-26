@@ -59,6 +59,9 @@ void car_departure(stack *garage, char entry[COL][LICENSE]) {
         stack_element *move_back_car = stack_pop(tmp_space);
         stack_push(garage, move_back_car->element.sval, STRING);
       }
+
+      // before returing destory the tmp space stack
+      stack_cleanup(tmp_space);
       return;
     }
     else {

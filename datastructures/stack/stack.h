@@ -72,7 +72,7 @@ bool is_stack_empty(stack *);
 bool is_stack_full(stack *);
 
 /**
- * @brief Add an element to the Stack.
+ * @brief Add an value to the Stack.
  * 
  * time complexity  -> O(1)
  * space complexity -> O(1)
@@ -85,6 +85,18 @@ bool is_stack_full(stack *);
  * @return false -> if push operation fails 
  */
 bool stack_push(stack *, void *, int);
+
+/**
+ * @brief Add stack element to the stack
+ *
+ * time complexity  -> O(1)
+ * space complexity -> O(1)
+ * 
+ * @param stack_element* Pointer to a stack_element struct
+ * @return true  -> if push operation is success
+ * @return false -> if push operation fails 
+ */
+bool stack_push_selement(stack *, stack_element *);
 
 /**
  * @brief Pop an element from top of the Stack.
