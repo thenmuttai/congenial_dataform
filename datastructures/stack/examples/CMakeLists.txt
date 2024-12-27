@@ -6,6 +6,7 @@ set(STACK_EXAMPLES
         is_the_equation_valid.c                       # problem 01
         parking_garage.c                              # problem 02
         implement_static_array_with_2_stack.c         # problem 03
+        evaluate_postfix_expression.c                 # problem 04
 )
 
 foreach(STACK_EXAMPLE ${STACK_EXAMPLES})
@@ -18,4 +19,9 @@ foreach(STACK_EXAMPLE ${STACK_EXAMPLES})
 
     # link the stack_lib to each example executable
     target_link_libraries(${FILE_NAME_WO_EXT} PRIVATE stack_lib)
+
+    # Link the math library only for problem 04
+    if(FILE_NAME_WO_EXT STREQUAL "evaluate_postfix_expression")
+        target_link_libraries(${FILE_NAME_WO_EXT} PRIVATE m)
+    endif()
 endforeach()
