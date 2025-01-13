@@ -37,7 +37,7 @@ double evaluate_postfix(char expression[]) {
     double val = atof(token);
 
     if (val) {
-      // if the conversion is successful, so it's a operand (float value)
+      // conversion is successful, so it's a operand (float value)
       // push the value on to the stack
       stack_push(s, &val, FLOAT);
     }
@@ -71,9 +71,8 @@ int main() {
     "-19 9 + 4 -"
   };
 
-  for (int i = 0; i < EXPRESSIONS; i++) {
+  for (int i = 0; i < EXPRESSIONS; i++)
     printf("(%s) = %lf \n", expressions[i], evaluate_postfix(expressions[i]));
-  }
 
   return 0;
 }
