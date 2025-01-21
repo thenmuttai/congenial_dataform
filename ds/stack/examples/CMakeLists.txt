@@ -8,6 +8,7 @@ set(STACK_EXAMPLES
         implement_static_array_with_2_stack.c         # problem 03
         evaluate_postfix_expression.c                 # problem 04
         evaluate_prefix_expression.c                  # problem 05
+        infix_to_postfix_expression.c                 # problem 06
 )
 
 foreach(STACK_EXAMPLE ${STACK_EXAMPLES})
