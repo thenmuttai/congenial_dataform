@@ -9,6 +9,7 @@ set(STACK_EXAMPLES
         evaluate_postfix_expression.c                 # problem 04
         evaluate_prefix_expression.c                  # problem 05
         infix_to_postfix_expression.c                 # problem 06
+        machine_with_one_register.c                   # problem 07
 )
 
 foreach(STACK_EXAMPLE ${STACK_EXAMPLES})
