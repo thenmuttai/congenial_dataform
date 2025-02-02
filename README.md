@@ -18,6 +18,7 @@
   <li><a href="ds/stack/examples/evaluate_postfix_expression.c">Evaluate postfix expression</a></li>
   <li><a href="ds/stack/examples/evaluate_prefix_expression.c">Evaluate prefix expression</a></li>
   <li><a href="ds/stack/examples/infix_to_postfix_expression.c">Infix to Postfix expression</a></li>
+  <li><a href="ds/stack/examples/machine_with_one_register.c">Machine instruction (for evaluating an expression)</a></li>
 </ol>
 
 
